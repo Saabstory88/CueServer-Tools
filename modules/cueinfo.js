@@ -61,7 +61,6 @@ class CueInfo extends ResourceDataLine {
     this.resourceType = new Uint8ClampedArray([0x10]);
     let resourceID = new Uint16Array([(this.cueNumber * 10)]);
     this.resourceID = new Uint8ClampedArray(resourceID.buffer);
-    console.log(this.resourceID);
 
     let cueNumber = new Uint16Array([(this.cueNumber * 10)]);
     this.resourceData.set(new Uint8ClampedArray(cueNumber.buffer), 0);

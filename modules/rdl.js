@@ -39,7 +39,6 @@ class ResourceDataLine {
     //Create the line to be written, ignoring the 0x0A line termination
     let line = "";
     line += ArrayToHex(this.resourceType);
-    console.log(ArrayToHex(this.resourceID))
     line += ArrayToHex(this.resourceID);
     line += ArrayToHex(this.resourceTime);
     line += '$';
